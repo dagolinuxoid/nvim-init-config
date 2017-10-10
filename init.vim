@@ -1,9 +1,12 @@
 " ~/.config/nvim/init.vim
+
+" apply plugins from pathogen
 execute pathogen#infect()
+
+" self-explanatory
 set number
 set showcmd
 set title 
-" colorscheme NeoSolarized
 
 " self-explanatory
 :inoremap ( ()<Esc>i
