@@ -1,4 +1,5 @@
 " ~/.config/nvim/init.vim
+execute pathogen#infect()
 set number
 set showcmd
 set title 
