@@ -42,7 +42,7 @@ set complete+=kspell
 " hi MatchParen cterm=bold ctermbg=none ctermfg=red
 
 " Theme
+syntax enable
 set background=dark
 let g:neosolarized_italic = 1
 colorscheme NeoSolarized
-
