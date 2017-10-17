@@ -1,5 +1,7 @@
 " ~/.config/nvim/init.vim
 
+" ~/.local/share/nvim/site/pack/git-plugins/start
+
 " self-explanatory
 set number
 set showcmd
