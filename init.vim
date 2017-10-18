@@ -18,11 +18,18 @@ set list
 :inoremap ' ''<Esc>i
 
 " Elegant highlighting on matching (){}[]
-hi MatchParen cterm=bold ctermfg=red ctermbg=none
+""hi MatchParen cterm=bold ctermfg=red ctermbg=none
 
 " Built in syntax highlight awesomeness
-hi Comment cterm=italic ctermfg=green
-hi Statement ctermfg=blue
+""hi Comment cterm=italic ctermfg=green
+""hi Statement ctermfg=blue
+""hi PreProc ctermfg=magenta
+""hi Identifier ctermfg=gray
+""hi Special ctermfg=yellow
+""hi Error ctermfg=black
+""hi Underlined ctermfg=white
+""hi Type guifg=#FF7DE9
+""hi Constant guifg=#B98EFF
 
 " Change cursor shape (legacy hack)
 au InsertEnter * silent execute "!gconftool-2 --type string --set /apps/gnome-terminal/profiles/Default/cursor_shape ibeam"
@@ -33,7 +40,6 @@ au FileType html set expandtab
 au FileType html set shiftwidth=2
 au FileType html set softtabstop=2
 au FileType html set tabstop=2
-
 nnoremap ,html :-1read $HOME/.config/nvim/.skeleton.html<CR>6jwf>a
 
 " JavaScript stuff
@@ -45,3 +51,6 @@ au Filetype javascript set tabstop=4
 " Spellchecking
 autocmd BufRead,BufNewFile *.md,*.txt setlocal spell spelllang=en_us
 set complete+=kspell
+
+" Colorscheme ^^
+colorscheme dago
