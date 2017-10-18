@@ -17,20 +17,6 @@ set list
 :inoremap " ""<Esc>i
 :inoremap ' ''<Esc>i
 
-" Elegant highlighting on matching (){}[]
-""hi MatchParen cterm=bold ctermfg=red ctermbg=none
-
-" Built in syntax highlight awesomeness
-""hi Comment cterm=italic ctermfg=green
-""hi Statement ctermfg=blue
-""hi PreProc ctermfg=magenta
-""hi Identifier ctermfg=gray
-""hi Special ctermfg=yellow
-""hi Error ctermfg=black
-""hi Underlined ctermfg=white
-""hi Type guifg=#FF7DE9
-""hi Constant guifg=#B98EFF
-
 " Change cursor shape (legacy hack)
 au InsertEnter * silent execute "!gconftool-2 --type string --set /apps/gnome-terminal/profiles/Default/cursor_shape ibeam"
 au InsertLeave * silent execute "!gconftool-2 --type string --set /apps/gnome-terminal/profiles/Default/cursor_shape block"
