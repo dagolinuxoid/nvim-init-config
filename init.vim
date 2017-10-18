@@ -3,6 +3,7 @@
 " ~/.local/share/nvim/site/pack/git-plugins/start
 
 " self-explanatory
+syntax on
 set number
 set showcmd
 set title
@@ -15,6 +16,13 @@ set list
 :inoremap { {}<Esc>i
 :inoremap " ""<Esc>i
 :inoremap ' ''<Esc>i
+
+" Elegant highlighting on matching (){}[]
+hi MatchParen cterm=bold ctermfg=red ctermbg=none
+
+" Built in syntax highlight awesomeness
+hi Comment cterm=italic ctermfg=green
+hi Statement ctermfg=blue
 
 " Change cursor shape (legacy hack)
 au InsertEnter * silent execute "!gconftool-2 --type string --set /apps/gnome-terminal/profiles/Default/cursor_shape ibeam"
@@ -37,12 +45,3 @@ au Filetype javascript set tabstop=4
 " Spellchecking
 autocmd BufRead,BufNewFile *.md,*.txt setlocal spell spelllang=en_us
 set complete+=kspell
-
-" Elegant highlighting on matching (){}[]<htmlTag>
-" hi MatchParen cterm=bold ctermbg=none ctermfg=red
-
-" Theme
-syntax enable
-set background=dark
-let g:neosolarized_italic = 1
-colorscheme NeoSolarized
