@@ -2,6 +2,9 @@
 
 " ~/.local/share/nvim/site/pack/git-plugins/start
 
+" Colorscheme ^^
+colorscheme dago
+
 " self-explanatory
 syntax on
 set number
@@ -34,9 +37,20 @@ au Filetype javascript set shiftwidth=4
 au Filetype javascript set softtabstop=4
 au Filetype javascript set tabstop=4
 
+let g:ale_linters = {
+\	'javascript': ['eslint'],
+\}
+
+""let g:ale_fixers = {
+""\	'javascript': ['eslint'],
+""\}
+""let g:ale_fix_on_save = 1
+""let g:ale_sign_column_always = 1
+let g:ale_lint_on_enter = 1
+let g:ale_lint_on_save = 1
+let g:ale_lint_on_text_changed = 0
+
 " Spellchecking
 autocmd BufRead,BufNewFile *.md,*.txt setlocal spell spelllang=en_us
 set complete+=kspell
 
-" Colorscheme ^^
-colorscheme dago
