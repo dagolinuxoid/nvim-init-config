@@ -37,6 +37,9 @@ au Filetype javascript set shiftwidth=4
 au Filetype javascript set softtabstop=4
 au Filetype javascript set tabstop=4
 
+hi SignColumn ctermbg=236
+hi ALEErrorSign ctermbg=8 ctermfg=red
+hi ALEEWarningSign ctermbg=8 ctermfg=yellow
 let g:ale_linters = {
 \	'javascript': ['eslint'],
 \}
@@ -45,7 +48,10 @@ let g:ale_linters = {
 ""\	'javascript': ['eslint'],
 ""\}
 ""let g:ale_fix_on_save = 1
-""let g:ale_sign_column_always = 1
+let g:ale_sign_error = '✖'
+let g:ale_sign_warning = '❱'
+let g:ale_change_sign_column_color=0
+let g:ale_sign_column_always = 0
 let g:ale_lint_on_enter = 1
 let g:ale_lint_on_save = 1
 let g:ale_lint_on_text_changed = 0
