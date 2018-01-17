@@ -13,13 +13,6 @@ set title
 set relativenumber
 set list
 
-" self-explanatory
-:inoremap ( ()<Esc>i
-:inoremap [ []<Esc>i
-:inoremap { {}<Esc>i
-:inoremap " ""<Esc>i
-:inoremap ' ''<Esc>i
-
 " Change cursor shape (legacy hack)
 au InsertEnter * silent execute "!gconftool-2 --type string --set /apps/gnome-terminal/profiles/Default/cursor_shape ibeam"
 au InsertLeave * silent execute "!gconftool-2 --type string --set /apps/gnome-terminal/profiles/Default/cursor_shape block"
