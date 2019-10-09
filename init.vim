@@ -17,6 +17,7 @@ set showcmd
 set title
 set relativenumber
 set list
+set clipboard+=unnamedplus
 
 " tab to space
 :set tabstop=2 shiftwidth=2 expandtab
@@ -34,7 +35,7 @@ nnoremap ,html :-1read $HOME/.config/nvim/.skeleton.html<CR>6jwf>a
 " Prettier
 let g:prettier#exec_cmd_path = "prettier"
 let g:prettier#autoformat = 0
-autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html PrettierAsync
+autocmd BufWritePre *.js,*.jsx,*.mjs,*.css,*.json,*.md,*.html PrettierAsync
 
 " Spellchecking
 autocmd BufRead,BufNewFile *.md,*.txt setlocal spell spelllang=en_us
